@@ -268,7 +268,7 @@ extern void reserve(string *str, uint64_t n);
 
 /* Use this function to allocate enough memory for specified number of characters N.  
    Note: this function Act as malloc(); and realloc(); 
-         the resulted buffer is inappropriate for many of the library functions. */
+         the resulted string object is inappropriate for many of the library functions. */
 extern void buffer(string *str, uint64_t n); 
 
 
