@@ -250,7 +250,7 @@ extern const char8_t *cbegin(string *str);
 extern int empty(string *str);
 
 
-/* Shrink the capacity of str to fit its content. */
+/* Shrink capacity of str to fit its content. */
 extern void shrinkTofit(string *str);
 
 
