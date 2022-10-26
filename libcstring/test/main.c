@@ -7,33 +7,33 @@ int main()
 {
     string msg = new string(12, 'H', 'e', 'l', 'l', 'o', ' ', 'g', 'i', 't', 'h', 'u', 'b');
 
-	display(&msg);
+    display(&msg);
 
-	insert(&msg, length(&msg), "!");
+    insert(&msg, length(&msg), "!");
 
-	display(&msg);
+    display(&msg);
 
-	string str = $("Hello world");
+    string str = $("Hello world");
 
-	display(&str);
+    display(&str);
 
-	append(&str, " 2022");
+    append(&str, " 2022");
 	
-	display(&str);
+    display(&str);
 
-	replace_all(&str, "new text", strlen("new text"));
+    replace_all(&str, "new text", strlen("new text"));
 
-	display(&str);
+    display(&str);
 
-	string digits = new string(5, 48, 49, 50, 51, 52);
+    string digits = new string(5, 48, 49, 50, 51, 52);
 
-	display(&digits);
+    display(&digits);
 
-	Used_memory();
+    Used_memory();
 
-	puts("");
+    puts("");
 	
-	About_Author();
+    About_Author();
 
     return 0;
 }
