@@ -1,2 +1,2 @@
 # libcstring
-C library was created to handle strings in clean and organized way.
+C library created to handle strings in clean and organized way.
