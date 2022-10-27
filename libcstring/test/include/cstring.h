@@ -214,7 +214,7 @@ extern void display(string *str);
 extern void clear(string *str);
 
 
-/* Erase all the characters in str and set its content holder to NULL. */
+/* Erase all the characters in str and set the string's buffer to NULL. */
 extern void erase(string *str);
 
 
