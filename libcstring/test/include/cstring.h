@@ -104,7 +104,6 @@ typedef struct int128_t  int128_t;
 #define str_seeK_set(s)                                            \
     _begin__(s) -= _len__(s)
 
-
 /*
     Declarations of the library functions. 
 */
