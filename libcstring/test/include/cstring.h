@@ -105,6 +105,10 @@ typedef struct int128_t  int128_t;
     _begin__(s) -= _len__(s)
 
 
+/*
+    Declarations of the library functions. 
+*/
+
 /* Initialize a string variable using individual characters. */
 extern string Array8_t(uint64_t i, ...);
 
