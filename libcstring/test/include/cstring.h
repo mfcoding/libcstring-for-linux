@@ -49,6 +49,10 @@ typedef struct int128_t  int128_t;
 #define string(...)        |0x1 ? Array8_t(__VA_ARGS__) : *((string *)0x0)
 #define str()              |0x1 ? new_string()          : *((string *)0x0)
 
+/* 
+    Lightweight versions of some of the declared functions. 
+*/
+
 #define _push_back_all_(s, ch)                                     \
     s.buffer[s.i++] = ch
 
