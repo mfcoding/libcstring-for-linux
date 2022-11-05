@@ -167,6 +167,10 @@ extern void insert(string *str, uint64_t index, const char *src);
 extern void insert_ch(string *str, uint64_t index, char ch); 
 
 
+/* Insert N characters of src into str at position index. */
+extern void insert_chars(string *str, uint64_t index, const char *src, uint64_t n);
+
+
 /* This function makes a set of configurations for function insert_char() */
 extern int128_t irange(string *str, uint64_t index, uint64_t n);
 
@@ -207,6 +211,11 @@ extern void copy(string *s1, string *s2);
 /* Return the starting index of N characters in str which is matching the same 
    number of characters in SRC at REP a repetition of matching between both. */
 extern uint64_t find(string *str, const char *src, uint64_t rep); 
+
+
+/* Return the starting index of N characters in str which is matching N 
+   characters in SRC at REP a repetition of matching between both. */
+extern uint64_t find_chars(string *str, const char *src, uint64_t n, uint64_t rep); 
 
 
 /* Return the number of WORD repetition in str. */
@@ -283,6 +292,16 @@ extern void buffer(string *str, uint64_t n);
 char8_t *_dig_(string *str); 
 
 
+/* Divide STR into tokens separated by characters in DELIM.  
+   The returned string holds all tokens separated by '\0'. */
+extern string str_tok(string *str, const char *delim);
+
+
+/* Return one token by its index.
+   This function rely on function str_tok(); */
+extern string get_token(string *str, uint64_t index);
+
+
 /* Create uninitialized string variables. */
 extern void new_strings(string *str, uint64_t s);
 
@@ -312,7 +331,7 @@ extern void ArrayToFile(struct string *arr, const char *fname, const char *w_mod
 
 
 /* About author. */
-extern void About_Author(void);
+extern char* LibraryAuthor(void);
 
 
 #endif
