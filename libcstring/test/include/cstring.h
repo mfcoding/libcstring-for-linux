@@ -209,13 +209,15 @@ extern void copy(string *s1, string *s2);
 
 
 /* Return the starting index of N characters in str which is matching the same 
-   number of characters in SRC at REP a repetition of matching between both. */
-extern uint64_t find(string *str, const char *src, uint64_t rep); 
+   number of characters in SRC at REP a repetition of matching between both
+   Otherwise return EOF. */
+extern signed long long int find(string *str, const char *src, uint64_t rep); 
 
 
 /* Return the starting index of N characters in str which is matching N 
-   characters in SRC at REP a repetition of matching between both. */
-extern uint64_t find_chars(string *str, const char *src, uint64_t n, uint64_t rep); 
+   characters in SRC at REP a repetition of matching between both 
+   Otherwise return EOF. */
+extern signed long long int find_chars(string *str, const char *src, uint64_t n, uint64_t rep); 
 
 
 /* Return the number of WORD repetition in str. */
