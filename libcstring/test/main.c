@@ -33,7 +33,7 @@ int main()
 
     puts("");
 	
-    puts(LibraryAuthor());
+    Author();
 
     return 0;
 }
