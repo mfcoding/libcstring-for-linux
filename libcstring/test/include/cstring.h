@@ -333,7 +333,7 @@ extern void ArrayToFile(struct string *arr, const char *fname, const char *w_mod
 
 
 /* About author. */
-extern char* LibraryAuthor(void);
+extern void Author(void); 
 
 
 #endif
