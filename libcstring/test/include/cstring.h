@@ -324,7 +324,7 @@ extern string new_string(void);
 extern void Used_memory(void);
 
 
-/* Return malloc'd array holding the content of File fname. */
+/* Return a string variable holding the content of File fname. */
 extern string FileToArray(const char *fname);
 
 
